@@ -10,8 +10,10 @@ let formDOM = document.getElementById("form")
 formDOM.addEventListener("submit" , form)
 
 function form() {
+  event.preventDefault()
   let name = document.getElementById("userName")
   let notId = document.getElementById("not")
+  addItem(name.value , notId.value)
 }
 
 let ulDOM = document.getElementById("ul")
