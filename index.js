@@ -11,8 +11,17 @@ formDOM.addEventListener("submit" , form)
 
 function form() {
   let name = document.getElementById("userName")
-  let not = document.getElementById("not")
+  let notId = document.getElementById("not")
 }
+
+let ulDOM = document.getElementById("ul")
+
+const addItem = (username , not) => {
+  let liDOM = document.getElementById("li")
+  liDOM.innerHTML = `${username} , ${not}`
+  ulDOM.append(liDOM)
+}
+
 
 
 
